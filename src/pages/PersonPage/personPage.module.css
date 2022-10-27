@@ -1,0 +1,27 @@
+
+.personBlock {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header {
+    height: 30%;
+    width: 100%;
+    border: solid 1px black;
+    background-color: #003bff;
+}
+
+.playersCard {
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    width: 100%;
+}
+
+.footer {
+    height: 30%;
+    width: 100%;
+    background-color: rebeccapurple;
+}
