@@ -2,14 +2,18 @@ import Person from "./persons/Person";
 import style from './GamePage.module.css'
 
 const Game = (props) => {
-    const {gamePage,count,gameBlock,buttonBlock} = style
+    const {gamePage, count, buttonBlock, gameBlock, piki} = style
 
-    return(
-            <div className={gamePage}>
+    const currentName = props.persons.namePersons.find(({id}) => id === +props.id)
+    return (
+        <div className={gamePage}>
             <div className={count}>Count</div>
-                {props.persons.namePersons.map((el)=> <Person id={el.id} />)}
-            <div className={buttonBlock}>buttonBlock</div>
+            <div className={gameBlock}>
+                <Person id={props.id} name={currentName} src={currentName} />
+                <div className={piki}>piki</div>
             </div>
+            <div className={buttonBlock}>buttonBlock</div>
+        </div>
 
     )
 }

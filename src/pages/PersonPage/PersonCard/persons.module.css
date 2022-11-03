@@ -1,6 +1,13 @@
 
-.persons {
+.personCard {
     background-color: green;
     width: 100%;
     border: 1px solid black;
+}
+
+.personImg {
+    height: 600px;
+    width: 100%;
+    margin-right: 2px;
+    cursor: pointer;
 }

@@ -6,6 +6,7 @@ const ChoosePerson = (props) => {
     return (
             <div className={style.mainBlock}>
                 <PersonPage persons={props.persons}/>
+
             </div>
     )
 

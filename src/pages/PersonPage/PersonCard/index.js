@@ -1,19 +1,17 @@
 import style from './persons.module.css'
 import {NavLink} from "react-router-dom";
 
-
-
 const PersonCard = (props) => {
-const {persons} = style
+    const {personImg, personCard} = style
+    const {name, id, cards} = props || {}
 
-    let path = '/game/' + props.id
+    let path = `/game/${id}`
 
     return (
-        <div className={persons}>
+        <div className={personCard}>
             <NavLink to={path}>
-                {props.name}
+                <img className={personImg} src={cards} alt={name}/>
             </NavLink>
-
 
         </div>
     )

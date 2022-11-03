@@ -1,13 +1,15 @@
 import Game from "./Game";
+import {useParams} from "react-router-dom";
 
 
 
 const GamePage = (props) => {
 
+
+    const {id}  = useParams();
     return (
-        <div>
-            <Game persons={props.persons}/>
-        </div>
+        <Game persons={props.persons} id={id} />
+
     )
 }
 

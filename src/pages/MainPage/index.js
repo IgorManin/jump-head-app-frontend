@@ -1,6 +1,5 @@
 import style from './mainMenu.module.css'
 import {BrowserRouter, NavLink, Route, Routes} from "react-router-dom";
-import ChoosePerson from "../../components/MainMenu/ChoosePerson";
 
 const MainPage = () => {
     const {mainMenu, text} = style

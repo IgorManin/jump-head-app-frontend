@@ -14,10 +14,20 @@
 }
 
 .gameBlock {
-    background-color: #003bff;
+    display: flex;
+    flex-direction: row;
+    width: 600px;
     height: 200px;
-    width: 1000px;
+    border-bottom: 1px solid black;
+    margin: auto;
+    justify-content: space-between;
+    align-items: flex-end;
 
+}
+
+.piki {
+    height: 50px;
+    width: 50px;
 }
 
 .buttonBlock {

@@ -1,17 +1,17 @@
 import style from './person.module.css'
-import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 const Person = (props) => {
-    const {some} = style
+    const {some, img} = style
+    const {src,name} = props || {}
 
-    let path = '/game/' + props.id
     return (
 
         <div className={some}>
-        {props.id}
-            Первый
+            <img className={img} src={src.img} alt={name}/>
         </div>
+
     )
+
 }
 
 export default Person
